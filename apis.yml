@@ -1,0 +1,63 @@
+aid: nipio
+name: nip.io / sslip.io
+description: >-
+  nip.io and sslip.io are a single wildcard-DNS service that resolves any hostname containing an
+  embedded IP address to that address — 93-184-216-34.nip.io and 93.184.216.34.sslip.io both
+  return 93.184.216.34, with no signup, no configuration and no records to create. It exists so
+  developers can put a real hostname in front of an arbitrary IP for local development, TLS
+  testing, Kubernetes ingress and CI, and it has been in operation for over ten years. The
+  operators state the service answers more than 20,000 queries per second. The DNS server behind
+  it is open source: cunnie/sslip.io, written in Go and licensed Apache-2.0.
+type: Index
+url: https://raw.githubusercontent.com/api-evangelist/nipio/refs/heads/main/apis.yml
+created: '2026-08-23'
+modified: '2026-08-23'
+specificationVersion: '0.23'
+tags:
+- DNS
+- Developer Tools
+- Infrastructure
+- Networking
+- Open Source
+- Local Development
+- TLS
+tags_raw:
+- dns
+- wildcard dns
+- developer tools
+- infrastructure
+apis: []
+common:
+- type: Website
+  url: https://nip.io/
+- type: Website
+  url: https://sslip.io/
+- type: GitHubRepository
+  url: https://github.com/cunnie/sslip.io
+- type: License
+  url: https://github.com/cunnie/sslip.io/blob/main/LICENSE
+- type: Packages
+  url: packages/nipio-source-repo.json
+maintainers:
+- FN: nip.io / sslip.io
+  url: https://nip.io/
+x-provenance:
+  added: '2026-08-23'
+  method: searched
+  source: https://nip.io/
+  note: >-
+    Added deliberately, not from a submission. It surfaced while separating two companies that
+    share the name LinkPeek: one of them is hosted on a raw IP behind this service, and sslip.io
+    itself turned out to be a real, long-running open-source project worth cataloguing on its own.
+    ONE SERVICE, TWO DOMAINS. sslip.io/ issues a 301 to nip.io/, and the shared page is titled
+    "Welcome to nip.io / sslip.io" and dedicated to the late Roopinder Singh, who created and ran
+    nip.io. The slug follows the canonical domain after the redirect. Both domains are recorded
+    because both remain live for DNS: verified by resolution, 93-184-216-34.nip.io and
+    93-184-216-34.sslip.io each return 93.184.216.34.
+    apis[] IS EMPTY ON PURPOSE. The interface here is DNS itself, not HTTP — there is no REST
+    surface to describe. /api, /api/v1 and /metrics all redirect, and apis.json, llms.txt,
+    openapi.json and .well-known/api-catalog return real 404s of 153 bytes on nip.io. Nothing was
+    modelled to fill that in. This is a valid service with a genuine machine interface and no
+    published contract, so it is listed and will score on what it publishes.
+    The open-source server is cunnie/sslip.io — Go, Apache-2.0, 1,119 stars at the time of
+    writing. Its repository metadata is kept under packages/ as evidence rather than as a claim.
