@@ -10,6 +10,17 @@ description: >-
   it is open source: cunnie/sslip.io, written in Go and licensed Apache-2.0.
 type: Index
 url: https://raw.githubusercontent.com/api-evangelist/nipio/refs/heads/main/apis.yml
+deliveryModel:
+  model: unknown
+  open_source: unknown
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - repository-unlicensed
+  generated: '2026-08-28'
+  method: derived
 created: '2026-08-23'
 modified: '2026-08-23'
 specificationVersion: '0.23'
