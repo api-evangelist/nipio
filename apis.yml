@@ -25,13 +25,10 @@ created: '2026-08-23'
 modified: '2026-08-23'
 specificationVersion: '0.23'
 tags:
-- DNS
+- dns
+- wildcard dns
 - Developer Tools
 - Infrastructure
-- Networking
-- Open Source
-- Local Development
-- TLS
 tags_raw:
 - dns
 - wildcard dns
